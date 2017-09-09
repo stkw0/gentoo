@@ -23,9 +23,12 @@
 # The functions support arbitrary version strings consisting of version
 # components interspersed with (possibly empty) version separators.
 #
-# A version component can either consist purely of digits ([0-9]+) or
-# purely of uppercase and lowercase letters ([a-zA-Z]+). Any other
-# character is treated as a version separator.
+# A version component can either consist purely of digits ([0-9]+)
+# or purely of uppercase and lowercase letters ([A-Za-z]+). A version
+# separator is either a string of any other characters ([^A-Za-z0-9]+),
+# or it occurs at the transition between a sequence of letters
+# and a sequence of digits, or vice versa.  In the latter case,
+# the version separator is an empty string.
 #
 # The version is processed left-to-right, and each successive component
 # is assigned numbers starting with 1. The components are either split
