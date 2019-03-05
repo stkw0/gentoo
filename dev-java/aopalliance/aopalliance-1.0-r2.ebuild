@@ -22,8 +22,8 @@ KEYWORDS="amd64 ppc64 x86 ~amd64-linux"
 
 IUSE=""
 
-DEPEND=">=virtual/jdk-1.4"
-RDEPEND=">=virtual/jre-1.4"
+DEPEND=">=virtual/jdk-1.6"
+RDEPEND=">=virtual/jre-1.6"
 
 S="${WORKDIR}/${P}"
 
