@@ -19,7 +19,7 @@ S="${WORKDIR}/${PN}-${PN}-${PV}"
 
 CDEPEND="dev-java/ant-core:0"
 
-DEPEND=">=virtual/jdk-1.4
+DEPEND=">=virtual/jdk-1.6
 	app-arch/unzip:0
 	dev-java/byaccj:0
 	>=dev-java/jflex-1.6.1:0
@@ -27,7 +27,7 @@ DEPEND=">=virtual/jdk-1.4
 	test? ( dev-java/junit:0 )
 	${CDEPEND}"
 
-RDEPEND=">=virtual/jre-1.4
+RDEPEND=">=virtual/jre-1.6
 	${CDEPEND}"
 
 java_prepare() {
