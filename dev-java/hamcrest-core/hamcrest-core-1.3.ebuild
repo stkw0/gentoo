@@ -19,11 +19,11 @@ LICENSE="BSD-2"
 SLOT="${PV}"
 KEYWORDS="amd64 ~arm ~arm64 ppc64 x86 ~ppc-macos ~x64-macos ~x86-macos"
 
-DEPEND=">=virtual/jdk-1.5
+DEPEND=">=virtual/jdk-1.6
 	~dev-java/hamcrest-generator-${PV}
 	userland_GNU? ( sys-apps/findutils )"
 
-RDEPEND=">=virtual/jre-1.5"
+RDEPEND=">=virtual/jre-1.6"
 
 JAVA_ANT_REWRITE_CLASSPATH="true"
 JAVA_ANT_CLASSPATH_TAGS="${JAVA_ANT_CLASSPATH_TAGS} java java-to-jar"
