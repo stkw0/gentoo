@@ -550,6 +550,12 @@ src_install() {
 
 	if use server; then
 		systemd_dounit "${FILESDIR}/atuin.service"
+
+		newinitd "${FILESDIR}/${PN}.initd" "${PN}"
+		newconfd "${FILESDIR}/${PN}.confd" "${PN}"
+
+		insinto /etc/logrotate.d
+		newins "${FILESDIR}/${PN}.logrotate" "${PN}"
 	fi
 
 	dodoc -r "${DOCS[@]}"
