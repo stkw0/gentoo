@@ -1,6 +1,7 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+
 # Jaco Kroon <jkroon@gentoo.org> (2025-12-06)
 # anydesk is pre-build with glibc, will not work on MUSL.
 net-misc/anydesk
@@ -34,6 +35,11 @@ net-misc/anydesk
 # Sam James <sam@gentoo.org> (2025-07-12)
 # Not ported to musl (bug #939569, https://github.com/oracle/dtrace-utils/issues/87)
 dev-debug/dtrace
+
+# Matt Jolly <kangie@gentooo.org> (2025-06-20)
+# Electron can't run on musl
+dev-util/electron
+dev-util/electron-bin
 
 # NHOrus <jy6x2b32pie9@yahoo.com> (2025-03-13)
 # uses functions musl will not implement, bug #942215
